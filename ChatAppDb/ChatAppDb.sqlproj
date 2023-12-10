@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{2c2c5f60-80e4-4647-83bf-12f3843c7f06}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -58,7 +58,13 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Profile.sql" />
-    <Build Include="Messages.sql" />
+    <Build Include="UserLogin.sql" />
+    <Build Include="UserContactInfo.sql" />
+    <Build Include="ChatMessages.sql" />
+    <Build Include="UserAddressInfo.sql" />
+    <Build Include="UserPersonalInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="ChatAppDb.refactorlog" />
   </ItemGroup>
 </Project>

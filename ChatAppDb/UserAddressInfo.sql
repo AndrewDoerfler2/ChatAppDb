@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[UserAddressInfo]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[UserId] INT NOT NULL,
+	[Address] VARCHAR(225) NOT NULL,
+	[City] VARCHAR(50) NOT NULL,
+	[State] VARCHAR(50) NOT NULL,
+	[Country] VARCHAR(50) NOT NULL,
+	[ZipCode] VARCHAR(10) NOT NULL,
+
+	CONSTRAINT [FK_UserAddress_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserLogin] ([Id])
+)
