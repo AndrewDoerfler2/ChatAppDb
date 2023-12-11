@@ -5,5 +5,5 @@
 	[PhoneNumber] VARCHAR(20) NOT NULL,
 	[Email] VARCHAR(50) NOT NULL
 
-	CONSTRAINT [FK_UserContact_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserLogin] ([Id])
+	CONSTRAINT [FK_UserContact_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([UserId])
 )

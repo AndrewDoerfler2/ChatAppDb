@@ -7,5 +7,5 @@
 	[DOB] DATE NOT NULL,
 	[Bio] TEXT Null,
 
-	CONSTRAINT [FK_UserPersonal_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserLogin] ([Id])
+	CONSTRAINT [FK_UserPersonal_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([UserId])
 )

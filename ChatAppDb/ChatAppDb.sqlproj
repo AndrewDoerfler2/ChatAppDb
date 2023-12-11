@@ -58,11 +58,13 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="UserLogin.sql" />
+    <Build Include="UserLoginHistory.sql" />
     <Build Include="UserContactInfo.sql" />
-    <Build Include="ChatMessages.sql" />
+    <Build Include="ChatMessageHistory.sql" />
     <Build Include="UserAddressInfo.sql" />
     <Build Include="UserPersonalInfo.sql" />
+    <Build Include="UserRegistration.sql" />
+    <Build Include="User.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ChatAppDb.refactorlog" />

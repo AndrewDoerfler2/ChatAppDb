@@ -8,5 +8,5 @@
 	[Country] VARCHAR(50) NOT NULL,
 	[ZipCode] VARCHAR(10) NOT NULL,
 
-	CONSTRAINT [FK_UserAddress_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[UserLogin] ([Id])
+	CONSTRAINT [FK_UserAddress_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([UserId])
 )
