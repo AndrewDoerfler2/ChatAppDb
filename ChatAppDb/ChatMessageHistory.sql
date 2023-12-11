@@ -6,6 +6,6 @@
 	[Message] NVARCHAR(225) NOT NULL,
 	[SentAt] DATETIME NOT NULL,
 	[ReadAt] DATETIME NULL,
-	CONSTRAINT [FK_ChatMessages_SenderId] FOREIGN KEY ([SenderId]) REFERENCES [dbo].[UserLogin] ([Id]),
-	CONSTRAINT [FK_ChatMessages_ReceiverId] FOREIGN KEY ([ReceiverId]) REFERENCES [dbo].[UserLogin] ([Id])
+	CONSTRAINT [FK_ChatMessages_SenderId] FOREIGN KEY ([SenderId]) REFERENCES [dbo].[User] ([UserId]),
+	CONSTRAINT [FK_ChatMessages_ReceiverId] FOREIGN KEY ([ReceiverId]) REFERENCES [dbo].[User] ([UserId])
 )
